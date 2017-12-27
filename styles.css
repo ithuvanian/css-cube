@@ -1,0 +1,89 @@
+@keyframes spin {
+  0% {
+    transform: rotateX(0) rotateY(0);
+  }
+  100% {
+    transform: rotateX(360deg) rotateY(360deg);
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.frame {
+  height: 100vh;
+  width: 100vw;
+  background: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.perspective {
+  perspective: 2000px;
+  perspective-origin: 50% 50%;
+}
+
+.cube {
+  position: relative;
+  width: 50vh;
+  height: 50vh;
+  transform-style: preserve-3d;
+  animation: spin 5s linear infinite;
+  animation-play-state: paused;
+}
+
+.cube div {
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  opacity: .5;
+  font-size: 7em;
+  color: #fff;
+  font-family: 'Indie Flower', cursive;
+}
+
+.front {
+  transform: translateZ(30vh);
+  background: #d4334e;
+}
+
+.top {
+  transform: rotateX(90deg) translateY(-25vh) translateZ(5vh);
+  transform-origin: top;
+  background: #7A67C9;
+}
+
+.bottom {
+  transform: rotateX(-90deg) translateY(25vh) translateZ(5vh);
+  transform-origin: bottom;
+  background: #893498;
+}
+
+.left {
+  transform: rotateY(-90deg) translateX(-25vh) translateZ(5vh);
+  transform-origin: left;
+  background: #c83a73;
+}
+
+.right {
+  transform: rotateY(90deg) translateX(25vh) translateZ(5vh);
+  transform-origin: right;
+  background: #ff423f;
+}
+
+.back {
+  transform: rotateY(180deg) translateZ(30vh);
+  background: #FF2b44;
+}
+
+.cube:hover {
+  animation-play-state: running;
+}
