@@ -7,7 +7,7 @@ $(document).ready(function() {
       setTimeout(function() {
         $('.cube').removeClass(spin);
         $('.direction').fadeIn();
-      }, 2500);
+      }, 2000);
     });
   }
 
@@ -15,5 +15,14 @@ $(document).ready(function() {
   triggerAnimation( $('.west'), 'spinLeft');
   triggerAnimation( $('.east'), 'spinRight');
   triggerAnimation( $('.south'), 'spinDown');
+
+  $('.cube').on('click', function() {
+    $(this).addClass('spinDiagonal');
+    $('.direction').fadeOut();
+    setTimeout(function() {
+      $('.cube').removeClass('spinDiagonal');
+      $('.direction').fadeIn();
+    }, 2000);
+  });
 
 });

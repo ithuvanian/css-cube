@@ -63,19 +63,23 @@ html, body {
 }
 .spinLeft {
   -webkit-animation: spinLeft 2.5s cubic-bezier(.14,.04,.13,.83);
-  animation: spinLeft 2.5s cubic-bezier(.14,.04,.13,.83);
+  animation: spinLeft 2s cubic-bezier(.14,.04,.13,.83);
 }
 .spinRight {
-  -webkit-animation: spinRight 2.5s cubic-bezier(.14,.04,.13,.83);
-  animation: spinRight 2.5s cubic-bezier(.14,.04,.13,.83);
+  -webkit-animation: spinRight 2s cubic-bezier(.14,.04,.13,.83);
+  animation: spinRight 2s cubic-bezier(.14,.04,.13,.83);
 }
 .spinDown {
-  -webkit-animation: spinDown 2.5s cubic-bezier(.14,.04,.13,.83);
-  animation: spinDown 2.5s cubic-bezier(.14,.04,.13,.83);
+  -webkit-animation: spinDown 2s cubic-bezier(.14,.04,.13,.83);
+  animation: spinDown 2s cubic-bezier(.14,.04,.13,.83);
 }
 .spinUp {
-  -webkit-animation: spinUp 2.5s cubic-bezier(.14,.04,.13,.83);
-  animation: spinUp 2.5s cubic-bezier(.14,.04,.13,.83);
+  -webkit-animation: spinUp 2s cubic-bezier(.14,.04,.13,.83);
+  animation: spinUp 2s cubic-bezier(.14,.04,.13,.83);
+}
+.spinDiagonal {
+	-webkit-animation: spinDiagonal 2s cubic-bezier(.14,.04,.13,.83);
+	animation: spinDiagonal 2s cubic-bezier(.14,.04,.13,.83);
 }
 
 .cube div {
