@@ -28,46 +28,67 @@ html, body {
   overflow: hidden;
 }
 
+.instructions {
+	z-index: 99;
+	position: absolute;
+	/*top: 4vh;*/
+	/*left: 4vh;*/
+	padding: 1vw;
+	width: 12vw;
+	background: rgba(33,33,33,.4);
+	font-family: sans-serif;
+	text-align: justify;
+	color: #eee;
+}
+
 /* circles */
 
 .direction {
   position: absolute;
 	background: #404040;
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   border: 2px solid #606060;
   border-radius: 50%;
 }
 .north {
+	-webkit-transform: translate(0, -44vh);
 	transform: translate(0, -44vh);
 }
 .west {
+  -webkit-transform: translate(-44vh, 0);
   transform: translate(-44vh, 0);
 }
 .east {
+  -webkit-transform: translate(44vh, 0);
   transform: translate(44vh, 0);
 }
 .south {
+  -webkit-transform: translate(0, 44vh);
   transform: translate(0, 44vh);
 }
 .nw {
+	-webkit-transform: translate(-44vh, -44vh);
 	transform: translate(-44vh, -44vh);
 }
 .ne {
+	-webkit-transform: translate(44vh, -44vh);
 	transform: translate(44vh, -44vh);
 }
 .sw {
+	-webkit-transform: translate(-44vh, 44vh);
 	transform: translate(-44vh, 44vh);
 }
 .se {
+	-webkit-transform: translate(44vh, 44vh);
 	transform: translate(44vh, 44vh);
 }
 
 /* cube objects */
 
 .perspective {
-  -webkit-perspective: 2000px;
-  perspective: 2000px;
+  -webkit-perspective: 2200px;
+  perspective: 2200px;
   -webkit-perspective-origin: 50% 50%;
   perspective-origin: 50% 50%;
 }
@@ -80,6 +101,10 @@ html, body {
   transform-style: preserve-3d;
   -webkit-transition: all 1s;
   transition: all 1s;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
 }
 
 .cube div {
@@ -104,8 +129,13 @@ html, body {
   -webkit-transition: opacity .5s;
   transition: opacity .5s;
 }
-.cube div:hover {
-  opacity: .7;
+.cube div:not(.front):hover {
+  opacity: .8;
+	cursor: -webkit-grabbing;
+	cursor: grabbing;
+}
+.front:hover {
+	opacity: .65;
 }
 
 /* sides of cube*/

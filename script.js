@@ -1,7 +1,6 @@
 $(document).ready(function() {
 
   function tiltCube(div, tilt, reset) {
-
     $(div).hover(function() {
       $('.cube').removeClass('resetUp resetDown resetLeft resetRight resetUpLeft resetUpRight resetDownLeft resetDownRight').addClass(tilt);
     }, function() {
@@ -12,7 +11,6 @@ $(document).ready(function() {
         $('.cube').removeClass(reset);
       }, 400);
     });
-
   }
 
   function clickAnimation(dot, spin) {
@@ -22,9 +20,13 @@ $(document).ready(function() {
       setTimeout(function() {
         $('.cube').removeClass(spin);
         $('.direction').fadeIn();
-      }, 2000);
+      }, 1500);
     });
   }
+
+  $('.cube, .direction').on('mouseover', function() {
+    $('.instructions').fadeOut(200);
+  });
 
   tiltCube($('.north'), 'tiltDown', 'resetDown');
   tiltCube($('.south'), 'tiltUp', 'resetUp');
@@ -45,10 +47,7 @@ $(document).ready(function() {
     setTimeout(function() {
       $('.cube').removeClass('spinDiagonal');
       $('.direction').fadeIn();
-    }, 1000);
+    }, 1800);
   });
-
-
-
 
 });
