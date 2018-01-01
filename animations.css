@@ -58,8 +58,8 @@
   animation: spinRight 1.2s cubic-bezier(.43,.07,.1,1.1);
 }
 .spinDiagonal {
-	-webkit-animation: spinDiagonal 1s cubic-bezier(.25,.05,0,.93);
-	animation: spinDiagonal 1s cubic-bezier(.25,.05,0,.93);
+	-webkit-animation: spinDiagonal 1s cubic-bezier(.25,.05,0,1.05);
+	animation: spinDiagonal 1s cubic-bezier(.25,.05,0,1.05);
 }
 
 /* on hover */
