@@ -58,8 +58,8 @@
   animation: spinRight 1.2s cubic-bezier(.43,.07,.1,1.1);
 }
 .spinDiagonal {
-	-webkit-animation: spinDiagonal 1s cubic-bezier(.25,.05,0,1.05);
-	animation: spinDiagonal 1s cubic-bezier(.25,.05,0,1.05);
+	-webkit-animation: spinDiagonal 1s cubic-bezier(.25,.05,0,1.1);
+	animation: spinDiagonal 1s cubic-bezier(.25,.05,0,1.1);
 }
 
 /* on hover */
@@ -99,23 +99,23 @@
 }
 
 .tiltUp {
-	-webkit-animation: tiltUp .3s cubic-bezier(.43,.07,.2,1.5);
-	animation: tiltUp .3s cubic-bezier(.43,.07,.2,1.5);
+	-webkit-animation: tiltUp .3s cubic-bezier(.43,.07,.2,1.8);
+	animation: tiltUp .3s cubic-bezier(.43,.07,.2,1.8);
 	animation-fill-mode: forwards;
 }
 .tiltDown {
-	-webkit-animation: tiltDown .3s cubic-bezier(.43,.07,.2,1.5);
-	animation: tiltDown .3s cubic-bezier(.43,.07,.2,1.5);
+	-webkit-animation: tiltDown .3s cubic-bezier(.43,.07,.2,1.8);
+	animation: tiltDown .3s cubic-bezier(.43,.07,.2,1.8);
 	animation-fill-mode: forwards;
 }
 .tiltLeft {
-	-webkit-animation: tiltLeft .3s cubic-bezier(.43,.07,.2,1.5);
-	animation: tiltLeft .3s cubic-bezier(.43,.07,.2,1.5);
+	-webkit-animation: tiltLeft .3s cubic-bezier(.43,.07,.2,1.8);
+	animation: tiltLeft .3s cubic-bezier(.43,.07,.2,1.8);
 	animation-fill-mode: forwards;
 }
 .tiltRight {
-	-webkit-animation: tiltRight .3s cubic-bezier(.43,.07,.2,1.5);
-	animation: tiltRight .3s cubic-bezier(.43,.07,.2,1.5);
+	-webkit-animation: tiltRight .3s cubic-bezier(.43,.07,.2,1.8);
+	animation: tiltRight .3s cubic-bezier(.43,.07,.2,1.8);
 	animation-fill-mode: forwards;
 }
 
@@ -155,23 +155,23 @@
 }
 
 .tiltUpLeft {
-	-webkit-animation: tiltUpLeft .3s cubic-bezier(.43,.07,.2,1.4);
-	animation: tiltUpLeft .3s cubic-bezier(.43,.07,.2,1.4);
+	-webkit-animation: tiltUpLeft .3s cubic-bezier(.43,.07,.2,1.6);
+	animation: tiltUpLeft .3s cubic-bezier(.43,.07,.2,1.6);
 	animation-fill-mode: forwards;
 }
 .tiltUpRight{
-	-webkit-animation: tiltUpRight .3s cubic-bezier(.43,.07,.2,1.4);
-	animation: tiltUpRight .3s cubic-bezier(.43,.07,.2,1.4);
+	-webkit-animation: tiltUpRight .3s cubic-bezier(.43,.07,.2,1.6);
+	animation: tiltUpRight .3s cubic-bezier(.43,.07,.2,1.6);
 	animation-fill-mode: forwards;
 }
 .tiltDownLeft {
-	-webkit-animation: tiltDownLeft .3s cubic-bezier(.43,.07,.2,1.4);
-	animation: tiltDownLeft .3s cubic-bezier(.43,.07,.2,1.4);
+	-webkit-animation: tiltDownLeft .3s cubic-bezier(.43,.07,.2,1.6);
+	animation: tiltDownLeft .3s cubic-bezier(.43,.07,.2,1.6);
 	animation-fill-mode: forwards;
 }
 .tiltDownRight {
-	-webkit-animation: tiltDownRight .3s cubic-bezier(.43,.07,.2,1.4);
-	animation: tiltDownRight .3s cubic-bezier(.43,.07,.2,1.4);
+	-webkit-animation: tiltDownRight .3s cubic-bezier(.43,.07,.2,1.6);
+	animation: tiltDownRight .3s cubic-bezier(.43,.07,.2,1.6);
 	animation-fill-mode: forwards;
 }
 

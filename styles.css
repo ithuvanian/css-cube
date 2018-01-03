@@ -31,8 +31,8 @@ html, body {
 .instructions {
 	z-index: 99;
 	position: absolute;
-	/*top: 4vh;*/
-	/*left: 4vh;*/
+	top: 4vh;
+	left: 4vh;
 	padding: 1vw;
 	width: 12vw;
 	background: rgba(33,33,33,.4);

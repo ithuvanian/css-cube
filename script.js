@@ -20,7 +20,7 @@ $(document).ready(function() {
       setTimeout(function() {
         $('.cube').removeClass(spin);
         $('.direction').fadeIn();
-      }, 1500);
+      }, 1250);
     });
   }
 
@@ -47,7 +47,7 @@ $(document).ready(function() {
     setTimeout(function() {
       $('.cube').removeClass('spinDiagonal');
       $('.direction').fadeIn();
-    }, 1800);
+    }, 1050);
   });
 
 });
