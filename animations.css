@@ -1,0 +1,289 @@
+/* on click*/
+
+@keyframes spinUp {
+  0% {
+    transform: rotateX(0) rotateY(0);
+  }
+  100% {
+    transform: rotateX(360deg) rotateY(0);
+  }
+}
+@keyframes spinDown {
+  0% {
+    transform: rotateX(0) rotateY(0);
+  }
+  100% {
+    transform: rotateX(-360deg) rotateY(0);
+  }
+}
+@keyframes spinLeft {
+  0% {
+    transform: rotateX(0) rotateY(0);
+  }
+  100% {
+    transform: rotateX(0) rotateY(-360deg);
+  }
+}
+@keyframes spinRight {
+  0% {
+    transform: rotateX(0) rotateY(0);
+  }
+  100% {
+    transform: rotateX(0) rotateY(360deg);
+  }
+}
+@keyframes spinDiagonal {
+  0% {
+    transform: rotateX(0) rotateY(0);
+  }
+  100% {
+    transform: rotateX(360deg) rotateY(360deg);
+  }
+}
+
+.spinUp {
+	-webkit-animation: spinUp 1.2s cubic-bezier(.43,.07,.1,1.1);
+	animation: spinUp 1.2s cubic-bezier(.43,.07,.1,1.1);
+}
+.spinDown {
+	-webkit-animation: spinDown 1.2s cubic-bezier(.43,.07,.1,1.1);
+	animation: spinDown 1.2s cubic-bezier(.43,.07,.1,1.1);
+}
+.spinLeft {
+  -webkit-animation: spinLeft 1.2s cubic-bezier(.43,.07,.1,1.1);
+  animation: spinLeft 1.2s cubic-bezier(.43,.07,.1,1.1);
+}
+.spinRight {
+  -webkit-animation: spinRight 1.2s cubic-bezier(.43,.07,.1,1.1);
+  animation: spinRight 1.2s cubic-bezier(.43,.07,.1,1.1);
+}
+.spinDiagonal {
+	-webkit-animation: spinDiagonal 1s cubic-bezier(.25,.05,0,1.1);
+	animation: spinDiagonal 1s cubic-bezier(.25,.05,0,1.1);
+}
+
+/* on hover */
+/*straight*/
+
+@keyframes tiltUp {
+  0% {
+    transform: rotateX(0) rotateY(0);
+  }
+  100% {
+    transform: rotateX(12deg) rotateY(0);
+  }
+}
+@keyframes tiltDown {
+  0% {
+    transform: rotateX(0) rotateY(0);
+  }
+  100% {
+    transform: rotateX(-12deg) rotateY(0);
+  }
+}
+@keyframes tiltLeft {
+  0% {
+    transform: rotateX(0) rotateY(0);
+  }
+  100% {
+    transform: rotateX(0) rotateY(-12deg);
+  }
+}
+@keyframes tiltRight {
+  0% {
+    transform: rotateX(0) rotateY(0);
+  }
+  100% {
+    transform: rotateX(0) rotateY(12deg);
+  }
+}
+
+.tiltUp {
+	-webkit-animation: tiltUp .3s cubic-bezier(.43,.07,.2,1.8);
+	animation: tiltUp .3s cubic-bezier(.43,.07,.2,1.8);
+	animation-fill-mode: forwards;
+}
+.tiltDown {
+	-webkit-animation: tiltDown .3s cubic-bezier(.43,.07,.2,1.8);
+	animation: tiltDown .3s cubic-bezier(.43,.07,.2,1.8);
+	animation-fill-mode: forwards;
+}
+.tiltLeft {
+	-webkit-animation: tiltLeft .3s cubic-bezier(.43,.07,.2,1.8);
+	animation: tiltLeft .3s cubic-bezier(.43,.07,.2,1.8);
+	animation-fill-mode: forwards;
+}
+.tiltRight {
+	-webkit-animation: tiltRight .3s cubic-bezier(.43,.07,.2,1.8);
+	animation: tiltRight .3s cubic-bezier(.43,.07,.2,1.8);
+	animation-fill-mode: forwards;
+}
+
+/*diagonal*/
+
+@keyframes tiltUpLeft {
+  0% {
+    transform: rotateX(0) rotateY(0);
+  }
+  100% {
+    transform: rotateX(10deg) rotateY(-10deg);
+  }
+}
+@keyframes tiltUpRight {
+  0% {
+    transform: rotateX(0) rotateY(0);
+  }
+  100% {
+    transform: rotateX(10deg) rotateY(10deg);
+  }
+}
+@keyframes tiltDownLeft {
+  0% {
+    transform: rotateX(0) rotateY(0);
+  }
+  100% {
+    transform: rotateX(-10deg) rotateY(-10deg);
+  }
+}
+@keyframes tiltDownRight {
+  0% {
+    transform: rotateX(0) rotateY(0);
+  }
+  100% {
+    transform: rotateX(-10deg) rotateY(10deg);
+  }
+}
+
+.tiltUpLeft {
+	-webkit-animation: tiltUpLeft .3s cubic-bezier(.43,.07,.2,1.6);
+	animation: tiltUpLeft .3s cubic-bezier(.43,.07,.2,1.6);
+	animation-fill-mode: forwards;
+}
+.tiltUpRight{
+	-webkit-animation: tiltUpRight .3s cubic-bezier(.43,.07,.2,1.6);
+	animation: tiltUpRight .3s cubic-bezier(.43,.07,.2,1.6);
+	animation-fill-mode: forwards;
+}
+.tiltDownLeft {
+	-webkit-animation: tiltDownLeft .3s cubic-bezier(.43,.07,.2,1.6);
+	animation: tiltDownLeft .3s cubic-bezier(.43,.07,.2,1.6);
+	animation-fill-mode: forwards;
+}
+.tiltDownRight {
+	-webkit-animation: tiltDownRight .3s cubic-bezier(.43,.07,.2,1.6);
+	animation: tiltDownRight .3s cubic-bezier(.43,.07,.2,1.6);
+	animation-fill-mode: forwards;
+}
+
+/*on hover off*/
+/*straight*/
+
+@keyframes resetUp {
+  0% {
+    transform: rotateX(12deg) rotateY(0);
+  }
+  100% {
+    transform: rotateX(0) rotateY(0);
+  }
+}
+@keyframes resetDown {
+  0% {
+    transform: rotateX(-12deg) rotateY(0);
+  }
+  100% {
+    transform: rotateX(0) rotateY(0);
+  }
+}
+@keyframes resetLeft {
+  0% {
+    transform: rotateX(0) rotateY(-12deg);
+  }
+  100% {
+    transform: rotateX(0) rotateY(0);
+  }
+}
+@keyframes resetRight {
+  0% {
+    transform: rotateX(0) rotateY(12deg);
+  }
+  100% {
+    transform: rotateX(0) rotateY(0);
+  }
+}
+
+.resetUp {
+	-webkit-animation: resetUp .3s cubic-bezier(.43,.07,.3,.95);
+	animation: resetUp .3s cubic-bezier(.43,.07,.3,.95);
+	animation-fill-mode: forwards;
+}
+.resetDown {
+	-webkit-animation: resetDown .3s cubic-bezier(.43,.07,.3,.95);
+	animation: resetDown .3s cubic-bezier(.43,.07,.3,.95);
+	animation-fill-mode: forwards;
+}
+.resetLeft {
+	-webkit-animation: resetLeft .3s cubic-bezier(.43,.07,.3,.95);
+	animation: resetLeft .3s cubic-bezier(.43,.07,.3,.95);
+	animation-fill-mode: forwards;
+}
+.resetRight {
+	-webkit-animation: resetRight .3s cubic-bezier(.43,.07,.3,.95);
+	animation: resetRight .3s cubic-bezier(.43,.07,.3,.95);
+	animation-fill-mode: forwards;
+}
+
+/*diagonal*/
+
+@keyframes resetUpLeft {
+  0% {
+    transform: rotateX(10deg) rotateY(-10deg);
+  }
+  100% {
+    transform: rotateX(0) rotateY(0);
+  }
+}
+@keyframes resetUpRight {
+  0% {
+    transform: rotateX(10deg) rotateY(10deg);
+  }
+  100% {
+    transform: rotateX(0) rotateY(0);
+  }
+}
+@keyframes resetDownLeft {
+  0% {
+    transform: rotateX(-10deg) rotateY(-10deg);
+  }
+  100% {
+    transform: rotateX(0) rotateY(0);
+  }
+}
+@keyframes resetDownRight {
+  0% {
+    transform: rotateX(-10deg) rotateY(10deg);
+  }
+  100% {
+    transform: rotateX(0) rotateY(0);
+  }
+}
+
+.resetUpLeft {
+	-webkit-animation: resetUpLeft .3s cubic-bezier(.43,.07,.3,.95);
+	animation: resetUpLeft .3s cubic-bezier(.43,.07,.3,.95);
+	animation-fill-mode: forwards;
+}
+.resetUpRight {
+	-webkit-animation: resetUpRight .3s cubic-bezier(.43,.07,.3,.95);
+	animation: resetUpRight .3s cubic-bezier(.43,.07,.3,.95);
+	animation-fill-mode: forwards;
+}
+.resetDownLeft {
+	-webkit-animation: resetDownLeft .3s cubic-bezier(.43,.07,.3,.95);
+	animation: resetDownLeft .3s cubic-bezier(.43,.07,.3,.95);
+	animation-fill-mode: forwards;
+}
+.resetDownRight {
+	-webkit-animation: resetDownRight .3s cubic-bezier(.43,.07,.3,.95);
+	animation: resetDownRight .3s cubic-bezier(.43,.07,.3,.95);
+	animation-fill-mode: forwards;
+}
