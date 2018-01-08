@@ -25,7 +25,11 @@ $(document).ready(function() {
   }
 
   $('.cube, .direction').on('mouseover', function() {
+<<<<<<< HEAD
     $('.instructions').delay(1000).fadeOut(200);
+=======
+    $('.instructions').fadeOut(200);
+>>>>>>> ef3e24fc970ba3a427c4ca5d7743e727b79ba853
   });
 
   tiltCube($('.north'), 'tiltDown', 'resetDown');
