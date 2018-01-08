@@ -129,19 +129,13 @@ html, body {
   -webkit-transition: opacity .5s;
   transition: opacity .5s;
 }
-<<<<<<< HEAD
+
 .cube div:hover {
 	cursor: -webkit-grabbing;
 	cursor: grabbing;
 }
 .cube div:not(.front):hover {
   opacity: .8;
-=======
-.cube div:not(.front):hover {
-  opacity: .8;
-	cursor: -webkit-grabbing;
-	cursor: grabbing;
->>>>>>> ef3e24fc970ba3a427c4ca5d7743e727b79ba853
 }
 .front:hover {
 	opacity: .65;

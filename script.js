@@ -25,11 +25,7 @@ $(document).ready(function() {
   }
 
   $('.cube, .direction').on('mouseover', function() {
-<<<<<<< HEAD
-    $('.instructions').delay(1000).fadeOut(200);
-=======
-    $('.instructions').fadeOut(200);
->>>>>>> ef3e24fc970ba3a427c4ca5d7743e727b79ba853
+    $('.instructions').delay(1000).fadeOut();
   });
 
   tiltCube($('.north'), 'tiltDown', 'resetDown');
@@ -38,7 +34,7 @@ $(document).ready(function() {
   tiltCube($('.east'), 'tiltLeft', 'resetLeft');
   tiltCube($('.nw'), 'tiltDownRight', 'resetDownRight');
   tiltCube($('.ne'), 'tiltDownLeft', 'resetDownLeft');
-  tiltCube($('.sw'), 'tiltUpRight', 'resetUpRight');
+  tiltCube($('.sw'), 'tiltUpRight', 'resetUpRight');s
   tiltCube($('.se'), 'tiltUpLeft', 'resetUpLeft');
   clickAnimation($('.top'), 'spinDown');
   clickAnimation($('.bottom'), 'spinUp');
