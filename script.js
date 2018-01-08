@@ -34,7 +34,7 @@ $(document).ready(function() {
   tiltCube($('.east'), 'tiltLeft', 'resetLeft');
   tiltCube($('.nw'), 'tiltDownRight', 'resetDownRight');
   tiltCube($('.ne'), 'tiltDownLeft', 'resetDownLeft');
-  tiltCube($('.sw'), 'tiltUpRight', 'resetUpRight');s
+  tiltCube($('.sw'), 'tiltUpRight', 'resetUpRight');
   tiltCube($('.se'), 'tiltUpLeft', 'resetUpLeft');
   clickAnimation($('.top'), 'spinDown');
   clickAnimation($('.bottom'), 'spinUp');
