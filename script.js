@@ -42,6 +42,8 @@ $(document).ready(function() {
   clickAnimation($('.right'), 'spinLeft');
 
   $('.front').on('click', function() {
+    $('.cube').toggleClass('A B');
+    $('body').css('pointer-events', 'none');
     $('.direction').fadeOut(100);
     $('.front').addClass('explodeFront');
     $('.top').addClass('explodeTop');
@@ -49,7 +51,11 @@ $(document).ready(function() {
     $('.left').addClass('explodeLeft');
     $('.right').addClass('explodeRight');
     $('.back').addClass('explodeBack');
+    if ($('.cube').hasClass('B')) {
+      $('.cube').addClass('spinDiagonal');
+    }
     setTimeout(function() {
+      $('body').css('pointer-events', 'auto');
       $('.direction').fadeIn();
       $('.front').removeClass('explodeFront');
       $('.top').removeClass('explodeTop');
@@ -57,8 +63,10 @@ $(document).ready(function() {
       $('.left').removeClass('explodeLeft');
       $('.right').removeClass('explodeRight');
       $('.back').removeClass('explodeBack');
-    }, 850);
-
+      $('.cube').removeClass('spinDiagonal');
+    }, 1850);
   });
+
+
 
 });

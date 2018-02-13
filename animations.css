@@ -36,6 +36,15 @@
   }
 }
 
+@keyframes spinDiagonal {
+  0% {
+    transform: rotateX(0) rotateY(0);
+  }
+  100% {
+    transform: rotateX(360deg) rotateY(360deg);
+  }
+}
+
 .spinUp {
   -webkit-animation: spinUp 1.4s cubic-bezier(.43, .07, .1, 1.1);
   animation: spinUp 1.4s cubic-bezier(.43, .07, .1, 1.1);
@@ -54,6 +63,11 @@
 .spinRight {
   -webkit-animation: spinRight 1.4s cubic-bezier(.43, .07, .1, 1.1);
   animation: spinRight 1.4s cubic-bezier(.43, .07, .1, 1.1);
+}
+
+.spinDiagonal {
+  -webkit-animation: spinDiagonal 1.8s cubic-bezier(.25, .05, 0, 1);
+  animation: spinDiagonal 1.8s cubic-bezier(.25, .05, 0, 1);
 }
 
 
@@ -325,7 +339,7 @@
   100% {
     -webkit-transform: translateZ(30vh);
     transform: translateZ(30vh);
-    opacity: .65;
+    opacity: .4;
   }
 }
 
@@ -420,31 +434,31 @@
 }
 
 .explodeFront {
-  -webkit-animation: explodeFront .8s cubic-bezier(.43, .07, .3, .95);
-  animation: explodeFront .8s cubic-bezier(.43, .07, .3, .95);
+  -webkit-animation: explodeFront 1.8s cubic-bezier(.43, .07, .3, .95);
+  animation: explodeFront 1.8s cubic-bezier(.43, .07, .3, .95);
 }
 
 .explodeTop {
-  -webkit-animation: explodeTop .8s cubic-bezier(.43, .07, .3, .95);
-  animation: explodeTop .8s cubic-bezier(.43, .07, .3, .95);
+  -webkit-animation: explodeTop 1.8s cubic-bezier(.43, .07, .3, .95);
+  animation: explodeTop 1.8s cubic-bezier(.43, .07, .3, .95);
 }
 
 .explodeBottom {
-  -webkit-animation: explodeBottom .8s cubic-bezier(.43, .07, .3, .95);
-  animation: explodeBottom .8s cubic-bezier(.43, .07, .3, .95);
+  -webkit-animation: explodeBottom 1.8s cubic-bezier(.43, .07, .3, .95);
+  animation: explodeBottom 1.8s cubic-bezier(.43, .07, .3, .95);
 }
 
 .explodeLeft {
-  -webkit-animation: explodeLeft .8s cubic-bezier(.43, .07, .3, .95);
-  animation: explodeLeft .8s cubic-bezier(.43, .07, .3, .95);
+  -webkit-animation: explodeLeft 1.8s cubic-bezier(.43, .07, .3, .95);
+  animation: explodeLeft 1.8s cubic-bezier(.43, .07, .3, .95);
 }
 
 .explodeRight {
-  -webkit-animation: explodeRight .8s cubic-bezier(.43, .07, .3, .95);
-  animation: explodeRight .8s cubic-bezier(.43, .07, .3, .95);
+  -webkit-animation: explodeRight 1.8s cubic-bezier(.43, .07, .3, .95);
+  animation: explodeRight 1.8s cubic-bezier(.43, .07, .3, .95);
 }
 
 .explodeBack {
-  -webkit-animation: explodeBack .8s cubic-bezier(.43, .07, .3, .95);
-  animation: explodeBack .8s cubic-bezier(.43, .07, .3, .95);
+  -webkit-animation: explodeBack 1.8s cubic-bezier(.43, .07, .3, .95);
+  animation: explodeBack 1.8s cubic-bezier(.43, .07, .3, .95);
 }
