@@ -46,10 +46,11 @@ html, body {
 .direction {
   position: absolute;
 	background: #404040;
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  height: 60px;
   border: 2px solid #606060;
   border-radius: 50%;
+	margin: 2vw;
 }
 .north {
 	-webkit-transform: translate(0, -44vh);
@@ -99,8 +100,6 @@ html, body {
   height: 50vh;
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
-  -webkit-transition: all 1s;
-  transition: all 1s;
 	-webkit-user-select: none;
 	-moz-user-select: none;
 	-ms-user-select: none;
@@ -131,8 +130,7 @@ html, body {
 }
 
 .cube div:hover {
-	cursor: -webkit-grabbing;
-	cursor: grabbing;
+	cursor: pointer;
 }
 .cube div:not(.front):hover {
   opacity: .8;
@@ -184,5 +182,5 @@ html, body {
 .back {
   -webkit-transform: rotateY(180deg) translateZ(30vh);
   transform: rotateY(180deg) translateZ(30vh);
-  background: #FF2b44;
+  background: #ff2b44;
 }

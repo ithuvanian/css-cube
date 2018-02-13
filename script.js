@@ -20,7 +20,7 @@ $(document).ready(function() {
       setTimeout(function() {
         $('.cube').removeClass(spin);
         $('.direction').fadeIn();
-      }, 1250);
+      }, 1450);
     });
   }
 
@@ -42,12 +42,23 @@ $(document).ready(function() {
   clickAnimation($('.right'), 'spinLeft');
 
   $('.front').on('click', function() {
-    $('.cube').addClass('spinDiagonal');
-    $('.direction').fadeOut();
+    $('.direction').fadeOut(100);
+    $('.front').addClass('explodeFront');
+    $('.top').addClass('explodeTop');
+    $('.bottom').addClass('explodeBottom');
+    $('.left').addClass('explodeLeft');
+    $('.right').addClass('explodeRight');
+    $('.back').addClass('explodeBack');
     setTimeout(function() {
-      $('.cube').removeClass('spinDiagonal');
       $('.direction').fadeIn();
-    }, 1050);
+      $('.front').removeClass('explodeFront');
+      $('.top').removeClass('explodeTop');
+      $('.bottom').removeClass('explodeBottom');
+      $('.left').removeClass('explodeLeft');
+      $('.right').removeClass('explodeRight');
+      $('.back').removeClass('explodeBack');
+    }, 850);
+
   });
 
 });
